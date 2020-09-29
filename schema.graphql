@@ -2,4 +2,5 @@ type Identity @entity {
   id: ID! #PIBIdentity
   identity: Bytes!
   hashDD: Bytes!
+  timestamp: BigInt!
 }

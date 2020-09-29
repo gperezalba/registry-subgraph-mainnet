@@ -10,6 +10,7 @@ export function handleNewIdentityDD(event: NewIdentityDD): void {
 
     identity.identity = event.params.identity;
     identity.hashDD = event.params._dataHashDD;
+    identity.timestamp = event.block.timestamp;
 
     identity.save();
 }
